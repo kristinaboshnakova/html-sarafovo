@@ -1,0 +1,312 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #070e27;
+    color: #fff;
+  }
+
+  .header {
+    padding: 16px 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    border-bottom: 1px solid #7e8bb6;
+    position: sticky;
+    top: 0px;
+    background-color: #070e27;
+  } 
+  .header .navigation {
+    margin-left: auto;
+    margin-right: 24px;
+  }
+
+.header .nav-list {
+    display: flex;
+    gap: 12px;
+  }
+  .header .nav-list a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+.navigation .nav-list .nav-item{
+    list-style: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    background-color: #162044;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  
+ .btn.btn-primary {
+ background-color: #7e8bb6;
+}
+
+#reserve {
+        border: none;
+        border-radius: 4px;
+        background-color: #162044;
+        color: #fff;
+        padding: 8px 20px;
+        cursor: pointer;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+
+
+  #about {
+    padding: 70px 64px;
+}
+
+#about .welcome {
+    max-width: 900px;
+    margin: 0 auto 48px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .welcome > * {
+    width: 45%;
+}
+
+#about .welcome .title {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+#about .welcome .info {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+#about .about-img {
+    margin: 0 auto 48px auto;
+}
+
+/*hhh*/
+
+#comfort{
+    padding: 70px 64px;
+}
+
+#comfort .row{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#comfort .row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#comfort .row:not(:last-child) {
+    margin-bottom: 48px;
+}
+#comfort .row .row-img {
+    width: 60%;
+}
+
+#comfort .row .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+#comfort .row .desc {
+    font-size: 24px;
+}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Разстояние между снимките */
+    max-width: 90%; /* Максимална ширина на контейнера */
+    margin-bottom: 60px;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.image-grid img {
+    width: calc(33.33% - 10px); /* Ширина на снимките с отчитане на разстоянието */
+    height: auto;
+}
+
+.sarafovo-info{
+    align-items: center;
+    font-size: 22px;
+    margin: 50px;
+    max-width: 98%;
+    padding: 15px;
+    text-indent: 15px;
+    
+    
+    
+}
+
+/*цена*/
+
+#price {
+    padding: 70px 64px;
+}
+
+#price .plans .plan {
+    padding: 12px 18px;
+    border-radius: 6px;
+    background-color: #162044;
+}
+
+#price .plans .plan:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+#price .plans .plan .title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #7e8bb6;
+    padding-bottom: 36px;
+    border-bottom: 2px solid #7e8bb6;
+    margin-bottom: 36px;
+}
+
+
+
+#price .plans .plan .title .price {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#price .plans .plan .title .price .dollar-sign {
+    color: #7e8bb6;
+}
+  
+  #price .plans .plan .features {
+    color: #7e8bb6;
+    margin: 0 12px 36px 12px;
+    list-style-type: none;
+}
+  
+  #price .plans .plan .features .feat:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+#reserve{
+    padding: 70px 64px;
+}
+
+#reserve .reserve-h1 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+#reserve .reserve-text{
+    text-align: center;
+    padding: 10px;
+}
+.mobile{
+    color: #74C0FC;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.social{
+    text-align: center;
+    font-size: 45px;
+    /*display: flex;
+    gap: 10px;*/
+}
+.social a{
+    text-decoration: none;
+}
+.footer{
+    
+    background-color: #15161b;
+}
+.bye{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.copyright{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    /* Header */
+    .header .navigation {
+      display: none;
+    }
+  
+    .header .btn {
+      margin-left: auto;
+    }
+  
+    /* about */
+    #about .welcome > div {
+      width: 80%;
+    }
+  
+    /* about section */
+    #comfort .row {
+      flex-direction: column;
+      text-align: center;
+    }
+    #comfort .row:nth-child(even) {
+      flex-direction: column;
+    }
+    #comfort .row .row-img {
+      width: 80%;
+    }
+  }
+
+@media screen and (min-width: 560px) {
+    #price .plans {
+      max-width: 900px;
+      margin: 0 auto 48px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    #price .plans .plan:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    #price .plans {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: end;
+    }
+  
+    #price .plans .plan.promo {
+      margin-bottom: 36px;
+      text-indent: 10px;
+    }
+  }
